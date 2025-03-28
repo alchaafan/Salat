@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Raleway";
+}
+
+body {
+    padding: 50px;
+}
+
+#img-gado {
+    width: 99%;
+    height: 400px;
+    border-radius: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+#details {
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    margin-top: 24px;
+}
+
+@media (max-width: 500px) {
+    #details {
+        gap: 1px;
+    }
+
+    #details-text {
+        font-size: 17px;
+    }
+}
+
+.img-details {
+    width: 24px;
+    height: 24px;
+}
+
+#details-container {
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    gap: 24px;
+    padding: 10px;
+    border-radius: 24px;
+}
+
+@media (max-width: 650px) {
+
+    #details-container {
+        gap: 2px;
+        padding: 0px;
+        margin-left: auto;
+    }
+    input {height: 35px;}
+
+}
+
+p {
+
+    font-size: 24px;
+    border-radius: 16px;
+}
+
+#line {
+    margin-top: 100px;
+    width: 99%;
+    height: 2px;
+    background-color: rgba(219, 208, 208, 0.432);
+    margin-bottom: 15px;
+}
+
+#link-portionen {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {}
+
+#zutaten-fuer {
+    margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+    #zutaten-fuer {
+        font-size: 20px;
+    }
+}
+
+button {
+    background-color: rgb(0, 128, 0);
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+@media(max-width: 500px) {
+    button {
+        width: 75px;
+    }
+
+}
+
+input {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    input {
+        font-size: 16px;
+        width: 90px;
+        height: 35px
+    }
+
+    ;
+}
+
+.with-background {
+    border-radius: 10px;
+    background-color: rgb(239, 239, 239);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.without-background {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+@media(max-width: 500px) {
+    .with-background .without-background {
+        font-size: 20px;
+    }
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#time {
+    display: flex;
+    gap: 40px;
+}
+
+@media(max-width: 500px) {
+    .clock-container {
+        gap: 2px;
+        padding: 1px;
+    }
+
+    #time {
+        gap: 2px
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #font-time {
+        font-size: 13px;
+    }
+
+    .clock-img {
+        height: 3px;
+        width: 3px;
+    }
+}
+
+.clock-img {
+    height: 30px;
+    width: 30px;
+}
+
+.clock-container {
+    display: flex;
+    gap: 16px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+#long-text {
+    margin-bottom: 36px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#rezept {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 16px;
+}
+
+@media (max-width: 500px) {
+    #rezept {
+        gap: 30px
+         display flex;
+        flex-direction: column;
+    }
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 30px;
+}

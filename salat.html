@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="salat.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <section>
+        <div>
+            <h1>Gado Gado - Indonesischer Salat mit Erdnusssauce</h1>
+        </div>
+        <div><img id="img-gado" src="./img/gado.jpg" alt="" class=""></div>
+
+        <div id="details">
+            <div id="details-container">
+                <img class="img-details" src="./img/clock-regular.svg" alt="">
+                <p id="details-text">15 Min.</p>
+            </div>
+            <div id="details-container">
+                <img class="img-details" src="./img/brain-solid.svg" alt="">
+                <p id="details-text">simpel</p>
+            </div>
+
+            <div id="details-container">
+                <img class="img-details" src="./img/calendar-alt-regular.svg" alt="">
+                <p id="details-text">18.03.2025</p>
+            </div>
+        </div>
+    </section>
+    <div id="line"></div>
+    <section>
+        <div id="link-portionen">
+            <p id="zutaten-fuer">Zutaten für</p>
+            <input type="number" id="anzahl-personen" value="1" min="1">
+            <button id="update-liste">Portionen</button>
+        </div>
+            <div>
+                <ul id="zutaten-liste">
+                    <li class="with-background">1 Salatgurke</li>
+                    <li class="without-background">1 Paprika</li>
+                    <li class="with-background">500g Tomaten</li>
+                    <li class="without-background">200g Schafkäse</li>
+                    <li class="with-background"> 2 Zwiebel</li>
+                    <li class="without-background">125ml Olivenöl</li>
+                </ul>
+                
+            </div>
+    </section>
+
+    <section>
+        <h1>Zubereitung</h1>
+        <div id="time">
+            <div class="clock-container">
+                <img class="clock-img" src="./img/clock-regular.svg" alt="">
+                <p id="font-time">ca. 15 Minuten</p>
+            </div>
+            <div class="clock-container">
+                <img class="clock-img" src="./img/clock-regular.svg" alt="">
+                <p id="font-time">Gesamtzeit ca. 15 Minuten</p>
+            </div>
+        </div>
+        <p id="long-text">Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden. Paprika waschen,
+            entkernen und in dünne Streifen <br>
+            schneiden. Tomaten waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden. Schafskäse würfeln
+            und mit Oregano <br>
+            bestreuen. Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebeln, und Schafkäse in eine Schüssel geben.
+            Olivenöl,<br>
+            Zitronensaft, Salz und Pfeffer zu einer Sauce verrühren und über den Salat gießen. Umrühren.</p>
+
+        <h2>Rezept erstellt von</h2>
+        <div id="rezept">
+            <img src="./img/profile.png" alt="">
+            <h3>Muhammad</h3>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
