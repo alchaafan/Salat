@@ -18,18 +18,23 @@ const zutaten = [
         zutatenListe.innerHTML = "";
 
         //Zutaten basierend auf Personenanzal anpassen
-        zutaten.forEach((zutat) => {
+        zutaten.forEach((zutat, index) => {
             const gesamtMenge = zutat.mengeProPerson * personenAnzahl;
-
-            // eine Liste mit dynamischen Mengen erstellen
+        
             const li = document.createElement('li');
             li.textContent = `${gesamtMenge} ${zutat.name.split(' ')[1]} ${zutat.name.split(' ').slice(2).join(' ')}`;
-            li.classList.add('without-background', 'with-background');
-           
-            
-        zutatenListe.appendChild(li);
+        
+            // Wechselnde CSS-Klassen basierend auf der Position
+            if (index % 2 === 0) {
+                li.classList.add('with-background');
+            } else {
+                li.classList.add('without-background');
+            }
+        
+            zutatenListe.appendChild(li);
+        });
 
         });
-    });
+    
 
     
